@@ -1,0 +1,114 @@
+---
+// import Card from '../components/Card.astro';
+import '@astrojs/react'
+import { DiscordLogo, GithubLogo, NewspaperClipping, EnvelopeOpen, HeartStraight } from 'phosphor-react'
+---
+
+<head>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <meta charset="UTF-8">
+</head>
+
+<div class="topnav">
+  <a className="active" href="/#home">Home</a>
+  <a className="tab" href="/#projects">Projects</a>
+  <a className="tab" href="/#technologies">Technologies</a>
+  <a className="tab" href="/#about">About</a>
+  <a class="social" href="/discord"> <i class="ph-discord-logo"></i> </a>
+  <a class="social" href="/blog"> <i class="ph-newspaper-clipping"></i> </a>
+  <a class="social" href="mailto:Infinitybeond1@protonmail.com"> <i class="ph-envelope-open"></i> </a>
+  <a class="social" href="/github"> <i class="ph-github-logo"></i> </a>
+</div>
+
+<div class="home" id="home">
+  <h1>
+    &#128075;  Hello
+  </h1>
+  <p>
+    I'm Luke, also known as Infinitybeond1.<br />
+    I am linux user and FOSS enthusiast and developer, I routinely contibute to projects on GitHub. I love systems programming and web developement.<br />
+    I've been a programmer for 3 years, and my favorite languages are nim and zig. Ive been into linux for a year now and I have some expirence with the command line. I also have some expirence with docker and the cloud! I started out programming by creating discord bots, and currently I make CLI apps and websites.<br />
+  </p>
+</div>
+
+<div class="projects" id="projects">
+  <h1>
+    Projects
+  </h1>
+  <p>
+    Coming soon!
+  </p>
+</div>
+
+<div class="footer">
+  <p class="footer-txt">
+    Made with <HeartStraight size={12} weight="fill" /> using the <a href="https://github.com/articblush" target="_blank" rel="noreferrer">articblush</a> colorscheme and <a href="https://astro.build/" target="_blank" rel="noreferrer">AstroJS</a>
+  </p>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@500&display=swap');
+  
+  body {
+    background-color: #040c16;
+    font-family: 'Josefin Sans', 'Noto Emoji';
+    color: #cce9ea
+  }
+  .topnav {
+    background-color: #09111b;
+    margin-bottom: 0.7rem;
+    padding: 18px
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: #b6beca;
+    text-align: center;
+    padding-right: 13px;
+    text-decoration: none;
+    font-size: 23px;
+    overflow: hidden;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #d2daf4;
+  }
+  
+  .topnav a.tab {
+    float: left;
+  }
+  
+  .topnav a.social {
+    float: right;
+    font-size: 22;
+    padding-left: 20px;
+    vertical-align: center;
+  }
+   
+  .home, .projects {
+    background: #09111b;
+    padding: 13px;
+    margin-bottom: 0.7rem;
+  }
+  
+  .home {
+    font-size: 17pt;
+  }
+  
+  .home h1 {
+    font-size: 23pt;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 11pt;
+    color: #b6beca
+  }
+  
+  .footer a {
+    all: unset;
+    color: #b6beca
+  }
+</style>
